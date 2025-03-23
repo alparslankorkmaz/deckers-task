@@ -9,7 +9,7 @@
     "nunjucks": "^3.2.4"
   },
   "scripts": {
-    "start": "mjml --watch src/index.mjml -o src/index.html",
+    "start": "node mock-api.js",
     "server": "live-server --host=localhost --open=src",
     "build": "node generate-email.js"
   }
