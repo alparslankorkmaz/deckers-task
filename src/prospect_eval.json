@@ -1,0 +1,84 @@
+{
+  "for": [
+    {
+      "contact": {
+        "email": "korkmazalparslan.elt@gmail.com"
+      },
+      "extVars": {
+        "LOCALE_ID": "EN-US",
+        "SHIP_ADDRESS": {
+          "SHIP_ADDRESSES": {
+            "SHIPPING_ADDRESS": {
+              "TELEPHONE": "020 7930 1397",
+              "CITY": "London",
+              "COUNTRY": "GB",
+              "POSTAL_CODE": "NW1 6XE",
+              "STATE": "",
+              "ADDRESS1": "221B Baker Street",
+              "NAME": "Timothy CARLTON",
+              "ADDRESS2": ""
+            }
+          }
+        },
+        "BILL_ADDRESS": {
+          "TELEPHONE": "020 7930 1397",
+          "CITY": "Aston, Birmingham",
+          "COUNTRY": "GB",
+          "POSTAL_CODE": "B6 6LU",
+          "STATE": "",
+          "ADDRESS1": "14 Lodge Road",
+          "NAME": "JoHn MiChEaL OsBoUrNe",
+          "ADDRESS2": ""
+        },
+        "ORDER_NO": "NA123456",
+        "DELIVERYBOX": "FALSE",
+        "ORDER_DATE": "2023-08-22T01:42:05Z",
+        "PAYMENT_METHOD": "RakutenPay",
+        "ORDER_TOTAL": 260,
+        "NAME": "JoHn MiChEaL OsBoUrNe",
+        "ORDER_TOKEN": "yxqGdYFxtFeZ0mI-49632rIk6bxKJGBb6kZ26E4_uCQ",
+        "VGC_ONLY_ORDER": "FALSE",
+        "PRODUCTS": [
+          {
+            "LINE_ROUTING_TYPE": "",
+            "SHIPMENT_ID": "me",
+            "AVAIL_TYPE": "AVAILABLE",
+            "UNIT_COST": 300,
+            "SIZE": 10,
+            "LOYALTY_POINTS": 30,
+            "UPC": "197634739168",
+            "LINE_SUBTOTAL": 130,
+            "PROD_NAME": "Bondi 9",
+            "COLOR_CODE": "BLK",
+            "COLOR_NAME": "BLACK",
+            "VGC_LINE": "",
+            "MODEL_NO": 1101442,
+            "QTY": 1,
+            "SKU": "1017715T-BCDR-08"
+          },
+          {
+            "LINE_ROUTING_TYPE": "",
+            "SHIPMENT_ID": "me",
+            "AVAIL_TYPE": "AVAILABLE",
+            "UNIT_COST": 300,
+            "SIZE": 10,
+            "LOYALTY_POINTS": 30,
+            "UPC": "194715594852",
+            "LINE_SUBTOTAL": 130,
+            "PROD_NAME": "Ora Recovery Shoe",
+            "COLOR_CODE": "BLK",
+            "COLOR_NAME": "BLACK",
+            "VGC_LINE": "",
+            "MODEL_NO": 1101442,
+            "QTY": 1,
+            "SKU": "1017715T-BCDR-08"
+          }
+        ],
+        "TAX_TOTAL": 20,
+        "PROD_TOTAL": 330,
+        "SHIP_CHARGE": 0
+      }
+    }
+  ],
+  "identifyBy": "email"
+}

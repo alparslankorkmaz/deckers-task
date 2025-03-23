@@ -1,0 +1,94 @@
+<mjml>
+  <mj-head>
+    <mj-preview>Your order has shipped!</mj-preview>
+  </mj-head>
+  <mj-body>
+    <!-- Header Section -->
+    <mj-section>
+      <mj-column>
+        <mj-image width="120px" src="https://example.com/logo.png"></mj-image>
+        <mj-text font-size="20px" font-weight="bold"
+          >Your order has shipped!</mj-text
+        >
+        <mj-text>Order #: {{ order.ORDER_NO }}</mj-text>
+        <mj-text>Arrives by: {{ order.ARRIVAL_DATE }}</mj-text>
+        <mj-button
+          background-color="#000000"
+          color="#ffffff"
+          href="https://example.com/track/{{ order.ORDER_TOKEN }}"
+        >
+          Track Your Package
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- Product List -->
+    <mj-section>
+      <mj-column>
+        <mj-text font-size="18px" font-weight="bold">Your Order</mj-text>
+      </mj-column>
+    </mj-section>
+
+    {% for product in order.PRODUCTS %}
+    <mj-section>
+      <mj-column width="30%">
+        <mj-image
+          width="100px"
+          src="https://example.com/product.jpg"
+        ></mj-image>
+      </mj-column>
+      <mj-column width="70%">
+        <mj-text font-weight="bold">{{ product.PROD_NAME }}</mj-text>
+        <mj-text>Quantity: {{ product.QTY }}</mj-text>
+        <mj-text>Size: {{ product.SIZE }}</mj-text>
+        <mj-text>£{{ product.LINE_SUBTOTAL }}</mj-text>
+      </mj-column>
+    </mj-section>
+    {% endfor %}
+
+    <!-- Shipping & Billing Address -->
+    <mj-section>
+      <mj-column>
+        <mj-text font-size="18px" font-weight="bold">Shipping Address</mj-text>
+        <mj-text>
+          {{ order.SHIP_ADDRESS.SHIP_ADDRESSES.SHIPPING_ADDRESS.NAME }}<br />
+          {{ order.SHIP_ADDRESS.SHIP_ADDRESSES.SHIPPING_ADDRESS.ADDRESS1 }}<br />
+          {{ order.SHIP_ADDRESS.SHIP_ADDRESSES.SHIPPING_ADDRESS.CITY }}, {{
+          order.SHIP_ADDRESS.SHIP_ADDRESSES.SHIPPING_ADDRESS.POSTAL_CODE }}
+        </mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-text font-size="18px" font-weight="bold">Billing Address</mj-text>
+        <mj-text>
+          {{ order.BILL_ADDRESS.NAME }}<br />
+          {{ order.BILL_ADDRESS.ADDRESS1 }}<br />
+          {{ order.BILL_ADDRESS.CITY }}, {{ order.BILL_ADDRESS.POSTAL_CODE }}
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- How to Wear It -->
+    <mj-section>
+      <mj-column>
+        <mj-text font-size="18px" font-weight="bold">How to Wear It</mj-text>
+        <mj-image src="https://example.com/outfit.jpg"></mj-image>
+        <mj-button
+          background-color="#000000"
+          color="#ffffff"
+          href="https://example.com/shop"
+          >Shop Now</mj-button
+        >
+      </mj-column>
+    </mj-section>
+
+    <!-- Footer -->
+    <mj-section>
+      <mj-column>
+        <mj-text align="center" font-size="12px"
+          >You received this email because you placed an order with
+          HOKA.</mj-text
+        >
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
